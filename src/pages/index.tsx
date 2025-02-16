@@ -1,19 +1,15 @@
-import { ClientComponent1 } from '../components/ClientComponent1';
-import { ServerComponent1 } from '../components/ServerComponent1';
+import { ClientComponent1 } from "../components/ClientComponent1";
 
 export default async function HomePage() {
-    
   return (
     <div>
-        <ServerComponent1/>
-        <br/>
-        <ClientComponent1/>
+      <ClientComponent1 />
     </div>
   );
 }
 
 export const getConfig = async () => {
-    return {
-        render: 'static',
-    } as const;
+  return {
+    render: "static",
+  } as const;
 };
